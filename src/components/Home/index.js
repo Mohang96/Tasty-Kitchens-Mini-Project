@@ -4,10 +4,10 @@ import Cookies from 'js-cookie'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+
 import {MdSort} from 'react-icons/md'
-import {CiSquareChevLeft, CiSquareChevRight} from 'react-icons/ci'
 import {FaSortDown} from 'react-icons/fa'
-import {BsCheck2} from 'react-icons/bs'
+import {BsCheck2, BsArrowLeftSquare, BsArrowRightSquare} from 'react-icons/bs'
 
 import Header from '../Header'
 import RestaurantItem from '../RestaurantItem'
@@ -246,14 +246,35 @@ class Home extends Component {
     }
   }
 
+  onClickPreviousArrow = () => {
+    const {activePageNo} = this.state
+    if (activePageNo > 1) {
+      this.setState(
+        prevState => ({
+          activePageNo: prevState.activePageNo - 1,
+        }),
+        this.getRestaurantDetails,
+      )
+    }
+  }
+
+  onClickNextArrow = () => {
+    this.setState(
+      prevState => ({
+        activePageNo: prevState.activePageNo + 1,
+      }),
+      this.getRestaurantDetails,
+    )
+  }
+
   renderPagination = () => {
     const {activePageNo} = this.state
     return (
       <div className="pagination-background-container">
         <div className="pagination-container">
-          <CiSquareChevLeft />
-          <p>{`${activePageNo} of 20`}</p>
-          <CiSquareChevRight />
+          <BsArrowLeftSquare onClick={this.onClickPreviousArrow} />
+          <p className="pagination-text">{`${activePageNo} of 20`}</p>
+          <BsArrowRightSquare onClick={this.onClickNextArrow} />
         </div>
       </div>
     )
