@@ -1,0 +1,132 @@
+.header-background {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fafc;
+  font-family: DM Sans;
+}
+
+.header-responsive-background {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo-and-title-background {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-logo {
+  width: 35px;
+  margin-right: 7px;
+  padding-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-logo {
+    width: 50px;
+  }
+}
+
+.header-title-text {
+  color: #f7931e;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-title-text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tablet-view-nav-items-list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tablet-view-nav-items-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+  }
+}
+
+.tablet-view-nav-item {
+  margin-left: 45px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.link-item {
+  text-decoration: none;
+  color: #334155;
+}
+
+.logout-btn {
+  background-color: #f7931e;
+  color: #f8fafc;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.logout-btn:hover {
+  color: #f7931e;
+  background-color: #e2e8f0;
+  transition: 0.5s;
+  box-shadow: 0px 8px 40px 0px #07070714;
+}
+
+.menu-icon-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-icon-background {
+    display: none;
+  }
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.mobile-nav-items-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.mobile-view-nav-items-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.mobile-view-nav-item {
+  font-size: 16px;
+  margin-right: 25px;
+  font-weight: 700;
+}

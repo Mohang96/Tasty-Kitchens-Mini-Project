@@ -1,0 +1,150 @@
+.home-background {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-responsive-background {
+  flex-grow: 1;
+  width: 90%;
+  margin: auto;
+}
+
+.carousel-images-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-images-background {
+    height: 35vh;
+  }
+}
+
+.carousel-image-background {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel {
+  height: 25vh;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel {
+    height: 35vh;
+  }
+}
+
+.dots-container {
+  top: -10px;
+  position: relative;
+}
+
+.popular-restaurants-text {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: #183b56;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .popular-restaurants-text {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+.popular-restaurants-description {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #64748b;
+}
+
+@media screen and (min-width: 768px) {
+  .popular-restaurants-description {
+    font-size: 16px;
+  }
+}
+
+.sort-by-feature-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sort-by-icon-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.sort-by-icon {
+  color: #475569;
+}
+
+.sort-by-text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #475569;
+  margin-right: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .sort-by-text {
+    font-size: 16px;
+  }
+}
+
+#selectElement {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding: 8px;
+  border-radius: 12px;
+  gap: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .separator {
+    display: none;
+  }
+}
+
+.restaurant-details-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-details-list {
+    flex-wrap: wrap;
+  }
+}
+
+.sort-option {
+  color: #475569;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
